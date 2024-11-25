@@ -1,0 +1,18 @@
+[user]
+	name = Khang Pham
+	email = 
+	username = 
+[core]
+	editor = nvim
+[alias]
+	gco = checkout
+	gci = commit
+	gst = status
+	gst = status
+	gcm = commit -m
+  gls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=relative
+
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
