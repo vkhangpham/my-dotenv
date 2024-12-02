@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textnvim ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vscode python )
+plugins=(git vscode python dotenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='nvim'
 # fi
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -116,6 +117,7 @@ alias cona="conda activate"
 alias coni="conda install"
 alias cur="cursor"
 alias gcmm="git commit -m"
+alias fd="fdfind"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -146,3 +148,6 @@ if [ -x /usr/bin/dircolors ]; then
       alias fgrep='fgrep --color=auto'
       alias egrep='egrep --color=auto'
 fi
+
+# nord theme
+eval $(dircolors ~/.dir_colors)
