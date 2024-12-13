@@ -67,8 +67,9 @@ tmux_conf_new_pane_reconnect_ssh=false
 # automatic detection relies on the COLORTERM environment variable being defined
 # to 'truecolor' or '24bit' or '$ tput colors' answering '16777216'
 # see https://github.com/termstandard/colors
-tmux_conf_24b_colour=auto
-
+tmux_conf_24b_colour=true
+set -g default-terminal "tmux-256color"
+set -ga terminal-overrides ',xterm-256color:Tc'
 
 # -- theming -------------------------------------------------------------------
 
@@ -443,9 +444,8 @@ tmux_conf_uninstall_plugins_on_reload=true
 #set -g @plugin 'tmux-plugins/tmux-resurrect'
 #set -g @plugin 'tmux-plugins/tmux-continuum'
 #set -g @continuum-restore 'on'
-set -g @plugin "nordtheme/tmux"
+set -g @plugin "arcticicestudio/nord-tmux"
 set -g @plugin "omerxx/tmux-sessionx"
-
 
 # -- custom variables ----------------------------------------------------------
 
